@@ -1,0 +1,172 @@
+Loading modules and activating conda environment...
+Checking PyTorch CUDA availability...
+CUDA available: True
+Device count: 1
+Running FuncExtrapNoLabel.py...
+
+====================
+EXPERIMENT FOR: Quadratic [quadratic]
+====================
+Pre-training Universal Probe for quadratic...
+Fitting PCA for quadratic gradients...
+
+--- Training: GT Axis for 'quadratic' ---
+Training Transductive (GT)...
+Training Inductive (GT)...
+Training Sparse Baseline...
+
+--- Training: T2V Axis for 'quadratic' ---
+Training Transductive (T2V)...
+Training Inductive (T2V)...
+Training Sparse Baseline...
+
+--- Evaluating models on F2 test set (Monte Carlo 400 runs)... ---
+
+--- Monte Carlo Results ---
+Sparse Baseline: 1.1711e+05 +/- 2.3470e+03
+GT Transductive: 1.1347e+03 +/- 6.8784e+00
+GT Inductive: 1.1785e+05 +/- 2.3715e+03
+RTE: 7.3275e+02 +/- 1.1869e+01
+T2V Inductive: 1.1983e+05 +/- 2.4716e+03
+Saved: out_fair_comparison/quadratic_All_Comparison.png
+
+====================
+EXPERIMENT FOR: Exp [exp]
+====================
+Pre-training Universal Probe for exp...
+Fitting PCA for exp gradients...
+
+--- Training: GT Axis for 'exp' ---
+Training Transductive (GT)...
+Training Inductive (GT)...
+Training Sparse Baseline...
+
+--- Training: T2V Axis for 'exp' ---
+Training Transductive (T2V)...
+Training Inductive (T2V)...
+Training Sparse Baseline...
+
+--- Evaluating models on F2 test set (Monte Carlo 400 runs)... ---
+
+--- Monte Carlo Results ---
+Sparse Baseline: 1.0749e+00 +/- 8.6528e-02
+GT Transductive: 1.1342e+00 +/- 1.0153e-01
+GT Inductive: 1.1094e+00 +/- 9.4636e-02
+RTE: 8.0046e-01 +/- 6.8957e-02
+T2V Inductive: 1.2464e+00 +/- 9.8404e-02
+Saved: out_fair_comparison/exp_All_Comparison.png
+
+====================
+EXPERIMENT FOR: Cubic [cubic]
+====================
+Pre-training Universal Probe for cubic...
+Fitting PCA for cubic gradients...
+
+--- Training: GT Axis for 'cubic' ---
+Training Transductive (GT)...
+Training Inductive (GT)...
+Training Sparse Baseline...
+
+--- Training: T2V Axis for 'cubic' ---
+Training Transductive (T2V)...
+Training Inductive (T2V)...
+Training Sparse Baseline...
+
+--- Evaluating models on F2 test set (Monte Carlo 400 runs)... ---
+
+--- Monte Carlo Results ---
+Sparse Baseline: 3.3643e+00 +/- 1.3876e-01
+GT Transductive: 9.5748e-01 +/- 4.9073e-02
+GT Inductive: 3.2388e+00 +/- 1.3267e-01
+RTE: 1.5325e+00 +/- 8.5425e-02
+T2V Inductive: 2.8633e+00 +/- 1.2017e-01
+Saved: out_fair_comparison/cubic_All_Comparison.png
+
+====================
+EXPERIMENT FOR: Tri Trend [tri_trend]
+====================
+Pre-training Universal Probe for tri_trend...
+Fitting PCA for tri_trend gradients...
+
+--- Training: GT Axis for 'tri_trend' ---
+Training Transductive (GT)...
+Training Inductive (GT)...
+Training Sparse Baseline...
+
+--- Training: T2V Axis for 'tri_trend' ---
+Training Transductive (T2V)...
+Training Inductive (T2V)...
+Training Sparse Baseline...
+
+--- Evaluating models on F2 test set (Monte Carlo 400 runs)... ---
+
+--- Monte Carlo Results ---
+Sparse Baseline: 4.7353e-01 +/- 1.8926e-02
+GT Transductive: 9.3837e-02 +/- 3.0284e-03
+GT Inductive: 4.8318e-01 +/- 1.8890e-02
+RTE: 4.7805e-02 +/- 2.3472e-03
+T2V Inductive: 4.6255e-01 +/- 1.7631e-02
+Saved: out_fair_comparison/tri_trend_All_Comparison.png
+
+====================
+EXPERIMENT FOR: Sin Trend [sin_trend]
+====================
+Pre-training Universal Probe for sin_trend...
+Fitting PCA for sin_trend gradients...
+
+--- Training: GT Axis for 'sin_trend' ---
+Training Transductive (GT)...
+Training Inductive (GT)...
+Training Sparse Baseline...
+
+--- Training: T2V Axis for 'sin_trend' ---
+Training Transductive (T2V)...
+Training Inductive (T2V)...
+Training Sparse Baseline...
+
+--- Evaluating models on F2 test set (Monte Carlo 400 runs)... ---
+
+--- Monte Carlo Results ---
+Sparse Baseline: 2.6619e-01 +/- 1.3113e-02
+GT Transductive: 5.5119e-02 +/- 1.1157e-03
+GT Inductive: 2.4865e-01 +/- 1.2042e-02
+RTE: 5.0678e-02 +/- 2.4948e-03
+T2V Inductive: 2.8057e-01 +/- 1.3939e-02
+Saved: out_fair_comparison/sin_trend_All_Comparison.png
+
+======================================================================
+Final Results Summary (Mean MSE +/- 95% CI)
+======================================================================
+Family      	Model                         	Result
+----------------------------------------------------------------------
+quadratic   	RTE                           	7.327e+02 +/- 1.187e+01
+quadratic   	GT Transductive               	1.135e+03 +/- 6.878e+00
+quadratic   	Sparse Baseline               	1.171e+05 +/- 2.347e+03
+quadratic   	GT Inductive                  	1.179e+05 +/- 2.372e+03
+quadratic   	T2V Inductive                 	1.198e+05 +/- 2.472e+03
+----------------------------------------------------------------------
+exp         	RTE                           	8.005e-01 +/- 6.896e-02
+exp         	Sparse Baseline               	1.075e+00 +/- 8.653e-02
+exp         	GT Inductive                  	1.109e+00 +/- 9.464e-02
+exp         	GT Transductive               	1.134e+00 +/- 1.015e-01
+exp         	T2V Inductive                 	1.246e+00 +/- 9.840e-02
+----------------------------------------------------------------------
+cubic       	GT Transductive               	9.575e-01 +/- 4.907e-02
+cubic       	RTE                           	1.532e+00 +/- 8.542e-02
+cubic       	T2V Inductive                 	2.863e+00 +/- 1.202e-01
+cubic       	GT Inductive                  	3.239e+00 +/- 1.327e-01
+cubic       	Sparse Baseline               	3.364e+00 +/- 1.388e-01
+----------------------------------------------------------------------
+tri_trend   	RTE                           	4.780e-02 +/- 2.347e-03
+tri_trend   	GT Transductive               	9.384e-02 +/- 3.028e-03
+tri_trend   	T2V Inductive                 	4.626e-01 +/- 1.763e-02
+tri_trend   	Sparse Baseline               	4.735e-01 +/- 1.893e-02
+tri_trend   	GT Inductive                  	4.832e-01 +/- 1.889e-02
+----------------------------------------------------------------------
+sin_trend   	RTE                           	5.068e-02 +/- 2.495e-03
+sin_trend   	GT Transductive               	5.512e-02 +/- 1.116e-03
+sin_trend   	GT Inductive                  	2.487e-01 +/- 1.204e-02
+sin_trend   	Sparse Baseline               	2.662e-01 +/- 1.311e-02
+sin_trend   	T2V Inductive                 	2.806e-01 +/- 1.394e-02
+----------------------------------------------------------------------
+Job finished.

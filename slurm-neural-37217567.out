@@ -1,0 +1,36 @@
+Loading modules and activating conda environment...
+Checking PyTorch CUDA availability...
+CUDA available: True
+Device count: 1
+Running LengthExtrapNoLabel.py...
+Populating Library (Degrees 1-8, 1000/deg)...
+Fitting PCA...
+
+Training for 20000 iterations...
+Iter 2000: Decomp=0.9263 | Extender=0.0919 | Base=0.6480
+Iter 4000: Decomp=1.3531 | Extender=0.1401 | Base=0.4010
+Iter 6000: Decomp=1.1299 | Extender=0.0849 | Base=0.4011
+Iter 8000: Decomp=1.0709 | Extender=0.1117 | Base=0.4639
+Iter 10000: Decomp=1.0506 | Extender=0.0735 | Base=0.4251
+Iter 12000: Decomp=0.9111 | Extender=0.1074 | Base=0.5595
+Iter 14000: Decomp=1.1286 | Extender=0.1024 | Base=0.5257
+Iter 16000: Decomp=1.1736 | Extender=0.1070 | Base=0.4851
+Iter 18000: Decomp=1.2619 | Extender=0.0882 | Base=0.3669
+Iter 20000: Decomp=1.4733 | Extender=0.0885 | Base=0.3178
+
+--- Evaluation on 50 MC Tasks (Degree 9) ---
+Baseline MSE: 0.5752 ± 0.1421
+RTE MSE:      0.3712 ± 0.1021
+
+Generating Dense Visualization for Degree 9 Extrapolation (10 Samples)...
+Saved dense visualization to out_neural_length_extrap/dense_neural_extrap_0.png
+Saved dense visualization to out_neural_length_extrap/dense_neural_extrap_1.png
+Saved dense visualization to out_neural_length_extrap/dense_neural_extrap_2.png
+Saved dense visualization to out_neural_length_extrap/dense_neural_extrap_3.png
+Saved dense visualization to out_neural_length_extrap/dense_neural_extrap_4.png
+Saved dense visualization to out_neural_length_extrap/dense_neural_extrap_5.png
+Saved dense visualization to out_neural_length_extrap/dense_neural_extrap_6.png
+Saved dense visualization to out_neural_length_extrap/dense_neural_extrap_7.png
+Saved dense visualization to out_neural_length_extrap/dense_neural_extrap_8.png
+Saved dense visualization to out_neural_length_extrap/dense_neural_extrap_9.png
+Job finished.

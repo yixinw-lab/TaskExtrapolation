@@ -1,0 +1,44 @@
+Loading modules and activating conda environment...
+Checking PyTorch CUDA availability...
+CUDA available: True
+Device count: 1
+Running CompositionExtrapNoLabel.py...
+Populating Library (3000/family)...
+Pre-training Task2Vec probe for 1000 steps...
+Computing gradient embeddings...
+Fitting PCA...
+Training models for 50000 steps...
+Iter 2000: RTE_Decomp=0.070 | RTE_Comp=0.623 | Inductive=0.672
+Iter 4000: RTE_Decomp=0.057 | RTE_Comp=0.555 | Inductive=0.601
+Iter 6000: RTE_Decomp=0.059 | RTE_Comp=0.881 | Inductive=0.925
+Iter 8000: RTE_Decomp=0.078 | RTE_Comp=0.495 | Inductive=0.496
+Iter 10000: RTE_Decomp=0.078 | RTE_Comp=0.407 | Inductive=0.442
+Iter 12000: RTE_Decomp=0.064 | RTE_Comp=0.409 | Inductive=0.412
+Iter 14000: RTE_Decomp=0.059 | RTE_Comp=0.418 | Inductive=0.465
+Iter 16000: RTE_Decomp=0.058 | RTE_Comp=0.369 | Inductive=0.436
+Iter 18000: RTE_Decomp=0.062 | RTE_Comp=0.370 | Inductive=0.452
+Iter 20000: RTE_Decomp=0.044 | RTE_Comp=0.213 | Inductive=0.303
+Iter 22000: RTE_Decomp=0.060 | RTE_Comp=0.298 | Inductive=0.414
+Iter 24000: RTE_Decomp=0.062 | RTE_Comp=0.261 | Inductive=0.330
+Iter 26000: RTE_Decomp=0.064 | RTE_Comp=0.334 | Inductive=0.486
+Iter 28000: RTE_Decomp=0.065 | RTE_Comp=0.315 | Inductive=0.514
+Iter 30000: RTE_Decomp=0.069 | RTE_Comp=0.306 | Inductive=0.513
+Iter 32000: RTE_Decomp=0.063 | RTE_Comp=0.328 | Inductive=0.440
+Iter 34000: RTE_Decomp=0.066 | RTE_Comp=0.260 | Inductive=0.460
+Iter 36000: RTE_Decomp=0.068 | RTE_Comp=0.189 | Inductive=0.319
+Iter 38000: RTE_Decomp=0.056 | RTE_Comp=0.312 | Inductive=0.442
+Iter 40000: RTE_Decomp=0.057 | RTE_Comp=0.268 | Inductive=0.440
+Iter 42000: RTE_Decomp=0.063 | RTE_Comp=0.275 | Inductive=0.505
+Iter 44000: RTE_Decomp=0.053 | RTE_Comp=0.357 | Inductive=0.543
+Iter 46000: RTE_Decomp=0.066 | RTE_Comp=0.235 | Inductive=0.399
+Iter 48000: RTE_Decomp=0.059 | RTE_Comp=0.214 | Inductive=0.389
+Iter 50000: RTE_Decomp=0.051 | RTE_Comp=0.207 | Inductive=0.402
+
+--- Comparing Inductive vs RTE (1000 trials) ---
+------------------------------------------------------------
+Model                | Mean MSE     | Std Dev     
+------------------------------------------------------------
+Inductive (Base)     | 0.3891        | 0.6106
+RTE (Transductive)   | 0.2867        | 0.4363
+------------------------------------------------------------
+Job finished.

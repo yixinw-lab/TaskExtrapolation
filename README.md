@@ -13,6 +13,6 @@ Github for the paper "Learning to Extrapolate to New Tasks: A Relational Approac
 | **Appendix B.1.2:** Multi-Step Compositional Extrapolation | | | | |
 | **Appendix B.2:** EM Pseudo-labels / Relaxing Meta-Label Assumptions |LatentTraining.py | | | |
 | **Appendix H.2:** Latent Space / Manifold Analysis Visualizations |CodeioVis.py | | | |
-| **Appendix K.1:** Parameter Extrapolation Ablations | | | | |
-| **Appendix K.2:** Length Extrapolation Ablations | | | | |
-| **Appendix K.3:** Composition Extrapolation Ablations | | | | |
+| **Appendix K.1:** Parameter Extrapolation Ablations |FuncExtrap_Ablations.py | | | |
+| **Appendix K.2:** Length Extrapolation Ablations |LengthExtrap_Ablations.py | | | |
+| **Appendix K.3:** Composition Extrapolation Ablations |CompositionExtrap_Ablations.py | | | |

@@ -1,0 +1,31 @@
+Loading modules and activating conda environment...
+Checking PyTorch CUDA availability...
+CUDA available: True
+Device count: 1
+Running FuncExtrap_Ablations.py...
+--- Setting up Experiment for quadratic ---
+Pre-training Universal Probe for quadratic...
+Fitting PCA for quadratic gradients...
+Discovering Axis...
+Generating Training Data...
+Training Transductive Model...
+Training Inductive Baseline...
+
+--- Running Final Ablations ---
+[Inductive Baseline] MSE: 104931.6094 +/- 4668.4449
+[Standard Transductive (Near Anchors)] MSE: 1096.8905 +/- 169.1032
+[Ablation: Far Anchors (F1_1)] MSE: 2325.5249 +/- 357.9482
+[Ablation: Random Anchors] MSE: 1322.8022 +/- 225.8787
+[Ablation: Zero Shift] MSE: 1158.6222 +/- 108.3899
+[Ablation: Random Axis] MSE: 891.5642 +/- 58.2557
+
+Results Table:
+                                 Method            MSE           CI
+0                    Inductive Baseline  104931.609375  4668.444905
+1  Standard Transductive (Near Anchors)    1096.890503   169.103165
+2          Ablation: Far Anchors (F1_1)    2325.524902   357.948233
+3              Ablation: Random Anchors    1322.802246   225.878721
+4                  Ablation: Zero Shift    1158.622192   108.389890
+5                 Ablation: Random Axis     891.564209    58.255729
+Saved to func_ablation_final.csv
+Job finished.

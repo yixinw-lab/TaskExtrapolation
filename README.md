@@ -4,7 +4,7 @@ Github for the paper "Learning to Extrapolate to New Tasks: A Relational Approac
 | Paper Section | Experiment Script | Results / Slurm File | Corresponding Figures | Notes / Comments |
 | :--- | :--- | :--- | :--- | :--- |
 | **Section 1 & App E.1:** Motivating Example (Projectile Motion) |Fig1A.py | | | |
-| **Section 3.1:** Parameter Extrapolation (Synthetic) |FuncExtrap_no_label.py |slurm-func-37217034.out | | |
+| **Section 3.1:** Parameter Extrapolation (Synthetic) |FuncExtrap_no_label.py |slurm-func-37217034.out |ParameterExtrap |Didn't include every image in paper to save space |
 | **Section 3.2:** Length Extrapolation (Synthetic) |LengthExtrapNoLabel.py |slurm-neural-37217567.out | | |
 | **Section 3.3:** Composition Extrapolation (Synthetic) |CompositionExtrapNoLabel.py |slurm-comp-nl-37217791.out | | |
 | **Section 4.1:** LLM Sparse Parity (Length Extrapolation) | | | | |

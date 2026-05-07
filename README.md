@@ -13,7 +13,7 @@ Github for the paper "Learning to Extrapolate to New Tasks: A Relational Approac
 | **Appendix B.1.2:** Multi-Step Compositional Extrapolation |CompositionExtrapMultiStep.py |CompMultiStep.txt.rtf |N/A |Ran without bash, output copy pasted |
 | **Appendix B.2:** EM Pseudo-labels / Relaxing Meta-Label Assumptions |LatentTraining.py | |N/A | |
 | **Appendix H.2:** Latent Space / Manifold Analysis Visualizations |VizLatent.py |N/A |TaskManifolds_Final.png |N/A |
-| **Appendix J:** Latent Space CodeIO |CodeioVis.py |N/A | |N/A |
+| **Appendix J:** Latent Space CodeIO |CodeioVis.py |N/A |global_tsne_final.png |N/A |
 | **Appendix K.1:** Parameter Extrapolation Ablations |FuncExtrap_Ablations.py |slurm-func-abl-37089077.out |N/A |N/A |
 | **Appendix K.2:** Length Extrapolation Ablations |LengthExtrap_Ablations.py |slurm-len-abl-37088156.out |N/A |N/A |
 | **Appendix K.3:** Composition Extrapolation Ablations |CompositionExtrap_Ablations.py |slurm-comp-abl-37087641.out |N/A |N/A |

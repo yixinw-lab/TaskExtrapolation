@@ -1,0 +1,205 @@
+Loading modules and activating conda environment...
+Checking PyTorch CUDA availability...
+CUDA available: True
+Device count: 1
+Running ParityExtrap.py...
+
+Generating Evaluation Datasets (Testing all 28 exhaustive size-6 combinations)...
+
+
+========================================
+ PHASE 1: DIRECT BASELINE (Few-Shot)
+========================================
+
+--- Training Baseline (600 Steps, Effective Batch 16) ---
+
+--- Evaluating Baseline ---
+Task 1/28: Baseline Correct = 1/10
+Task 2/28: Baseline Correct = 5/10
+Task 3/28: Baseline Correct = 2/10
+Task 4/28: Baseline Correct = 6/10
+Task 5/28: Baseline Correct = 5/10
+Task 6/28: Baseline Correct = 10/10
+Task 7/28: Baseline Correct = 5/10
+Task 8/28: Baseline Correct = 4/10
+Task 9/28: Baseline Correct = 2/10
+Task 10/28: Baseline Correct = 5/10
+Task 11/28: Baseline Correct = 7/10
+Task 12/28: Baseline Correct = 9/10
+Task 13/28: Baseline Correct = 4/10
+Task 14/28: Baseline Correct = 7/10
+Task 15/28: Baseline Correct = 4/10
+Task 16/28: Baseline Correct = 4/10
+Task 17/28: Baseline Correct = 5/10
+Task 18/28: Baseline Correct = 6/10
+Task 19/28: Baseline Correct = 5/10
+Task 20/28: Baseline Correct = 7/10
+Task 21/28: Baseline Correct = 4/10
+Task 22/28: Baseline Correct = 5/10
+Task 23/28: Baseline Correct = 6/10
+Task 24/28: Baseline Correct = 7/10
+Task 25/28: Baseline Correct = 4/10
+Task 26/28: Baseline Correct = 5/10
+Task 27/28: Baseline Correct = 8/10
+Task 28/28: Baseline Correct = 6/10
+
+>>> FINAL BASELINE ACCURACY: 52.86%
+
+
+========================================
+ PHASE 2: COMPOSITIONAL EXTENDER
+========================================
+
+--- Training Extender (600 Steps, Effective Batch 16) ---
+
+--- Evaluating Extender (Leave-One-Out Support Search) ---
+
+[DEBUG] Task 1 Target Mask: 0b111111
+[DEBUG] Search Retrieved -> Parent: 0b11111, Bit: 5 (Loss: 0.0000)
+[DEBUG] SUCCESS: Identified a valid ground truth decomposition.
+--> Task 1 Score: Reason=10/10 | Oracle=10/10
+
+[DEBUG] Task 2 Target Mask: 0b1011111
+[DEBUG] Search Retrieved -> Parent: 0b1001111, Bit: 4 (Loss: 0.0000)
+[DEBUG] SUCCESS: Identified a valid ground truth decomposition.
+--> Task 2 Score: Reason=10/10 | Oracle=10/10
+
+[DEBUG] Task 3 Target Mask: 0b10011111
+[DEBUG] Search Retrieved -> Parent: 0b11111, Bit: 3 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 3 Score: Reason=5/10 | Oracle=10/10
+
+[DEBUG] Task 4 Target Mask: 0b1101111
+[DEBUG] Search Retrieved -> Parent: 0b1011101, Bit: 1 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 4 Score: Reason=4/10 | Oracle=10/10
+
+[DEBUG] Task 5 Target Mask: 0b10101111
+[DEBUG] Search Retrieved -> Parent: 0b111101, Bit: 6 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 5 Score: Reason=5/10 | Oracle=10/10
+
+[DEBUG] Task 6 Target Mask: 0b11001111
+[DEBUG] Search Retrieved -> Parent: 0b10010111, Bit: 1 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 6 Score: Reason=6/10 | Oracle=10/10
+
+[DEBUG] Task 7 Target Mask: 0b1110111
+[DEBUG] Search Retrieved -> Parent: 0b110111, Bit: 5 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 7 Score: Reason=6/10 | Oracle=10/10
+
+[DEBUG] Task 8 Target Mask: 0b10110111
+[DEBUG] Search Retrieved -> Parent: 0b10110101, Bit: 1 (Loss: 0.0000)
+[DEBUG] SUCCESS: Identified a valid ground truth decomposition.
+--> Task 8 Score: Reason=10/10 | Oracle=10/10
+
+[DEBUG] Task 9 Target Mask: 0b11010111
+[DEBUG] Search Retrieved -> Parent: 0b1001111, Bit: 7 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 9 Score: Reason=6/10 | Oracle=10/10
+
+[DEBUG] Task 10 Target Mask: 0b11100111
+[DEBUG] Search Retrieved -> Parent: 0b10001111, Bit: 4 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 10 Score: Reason=5/10 | Oracle=10/10
+
+[DEBUG] Task 11 Target Mask: 0b1111011
+[DEBUG] Search Retrieved -> Parent: 0b111011, Bit: 6 (Loss: 0.0000)
+[DEBUG] SUCCESS: Identified a valid ground truth decomposition.
+--> Task 11 Score: Reason=10/10 | Oracle=10/10
+
+[DEBUG] Task 12 Target Mask: 0b10111011
+[DEBUG] Search Retrieved -> Parent: 0b1011101, Bit: 1 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 12 Score: Reason=7/10 | Oracle=10/10
+
+[DEBUG] Task 13 Target Mask: 0b11011011
+[DEBUG] Search Retrieved -> Parent: 0b111011, Bit: 3 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 13 Score: Reason=8/10 | Oracle=10/10
+
+[DEBUG] Task 14 Target Mask: 0b11101011
+[DEBUG] Search Retrieved -> Parent: 0b1101011, Bit: 7 (Loss: 0.0000)
+[DEBUG] SUCCESS: Identified a valid ground truth decomposition.
+--> Task 14 Score: Reason=10/10 | Oracle=10/10
+
+[DEBUG] Task 15 Target Mask: 0b11110011
+[DEBUG] Search Retrieved -> Parent: 0b11010011, Bit: 5 (Loss: 0.0000)
+[DEBUG] SUCCESS: Identified a valid ground truth decomposition.
+--> Task 15 Score: Reason=10/10 | Oracle=10/10
+
+[DEBUG] Task 16 Target Mask: 0b1111101
+[DEBUG] Search Retrieved -> Parent: 0b10010111, Bit: 5 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 16 Score: Reason=1/10 | Oracle=10/10
+
+[DEBUG] Task 17 Target Mask: 0b10111101
+[DEBUG] Search Retrieved -> Parent: 0b10101011, Bit: 0 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 17 Score: Reason=5/10 | Oracle=10/10
+
+[DEBUG] Task 18 Target Mask: 0b11011101
+[DEBUG] Search Retrieved -> Parent: 0b1011101, Bit: 0 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 18 Score: Reason=6/10 | Oracle=10/10
+
+[DEBUG] Task 19 Target Mask: 0b11101101
+[DEBUG] Search Retrieved -> Parent: 0b10100111, Bit: 2 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 19 Score: Reason=4/10 | Oracle=10/10
+
+[DEBUG] Task 20 Target Mask: 0b11110101
+[DEBUG] Search Retrieved -> Parent: 0b110111, Bit: 1 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 20 Score: Reason=4/10 | Oracle=10/10
+
+[DEBUG] Task 21 Target Mask: 0b11111001
+[DEBUG] Search Retrieved -> Parent: 0b11011001, Bit: 5 (Loss: 0.0000)
+[DEBUG] SUCCESS: Identified a valid ground truth decomposition.
+--> Task 21 Score: Reason=10/10 | Oracle=10/10
+
+[DEBUG] Task 22 Target Mask: 0b1111110
+[DEBUG] Search Retrieved -> Parent: 0b101111, Bit: 0 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 22 Score: Reason=6/10 | Oracle=10/10
+
+[DEBUG] Task 23 Target Mask: 0b10111110
+[DEBUG] Search Retrieved -> Parent: 0b1111001, Bit: 0 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 23 Score: Reason=7/10 | Oracle=10/10
+
+[DEBUG] Task 24 Target Mask: 0b11011110
+[DEBUG] Search Retrieved -> Parent: 0b10001111, Bit: 1 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 24 Score: Reason=6/10 | Oracle=10/10
+
+[DEBUG] Task 25 Target Mask: 0b11101110
+[DEBUG] Search Retrieved -> Parent: 0b11001110, Bit: 3 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 25 Score: Reason=5/10 | Oracle=10/10
+
+[DEBUG] Task 26 Target Mask: 0b11110110
+[DEBUG] Search Retrieved -> Parent: 0b11001011, Bit: 6 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 26 Score: Reason=7/10 | Oracle=10/10
+
+[DEBUG] Task 27 Target Mask: 0b11111010
+[DEBUG] Search Retrieved -> Parent: 0b1001111, Bit: 3 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 27 Score: Reason=6/10 | Oracle=10/10
+
+[DEBUG] Task 28 Target Mask: 0b11111100
+[DEBUG] Search Retrieved -> Parent: 0b11001110, Bit: 0 (Loss: 0.0000)
+[DEBUG] FAILED: Search picked a spurious decomposition.
+--> Task 28 Score: Reason=6/10 | Oracle=10/10
+
+>>> FINAL EXTENDER RESULTS: Reason 66.07% | Oracle 100.00%
+
+========================================
+🏆 SUMMARY OF RESULTS 🏆
+========================================
+Baseline (Direct Few-Shot):  52.86%
+Extender (Search + Reason):  66.07%
+Oracle (Ground Truth Sub):   100.00%
+Job finished.

@@ -7,7 +7,7 @@ Github for the paper "Learning to Extrapolate to New Tasks: A Relational Approac
 | **Section 3.1:** Parameter Extrapolation (Synthetic) |FuncExtrap_no_label.py |slurm-func-37217034.out |ParameterExtrap |Didn't include every image in paper to save space |
 | **Section 3.2:** Length Extrapolation (Synthetic) |LengthExtrapNoLabel.py |slurm-neural-37217567.out |LengthExtrap |Didn't include every image in paper to save space |
 | **Section 3.3:** Composition Extrapolation (Synthetic) |CompositionExtrapNoLabel.py |slurm-comp-nl-37217791.out |CompExtrap |Didn't include every image in paper to save space |
-| **Section 4.1:** LLM Sparse Parity (Length Extrapolation) | | | |N/A |
+| **Section 4.1:** LLM Sparse Parity (Length Extrapolation) |ParityExtrap.py |slurm-parity-40686925.out |N/A |N/A |
 | **Section 4.2:** LLM CodeIO (Compositional String Transformations) |CompositionLearner.py |final_results.json |N/A |N/A |
 | **Appendix B.1.1:** Multi-Step Parameter Extrapolation |FuncExtrapMultiStep.py |FuncMultiStep.txt.rtf |N/A |Ran without bash, output copy pasted |
 | **Appendix B.1.2:** Multi-Step Compositional Extrapolation |CompositionExtrapMultiStep.py |CompMultiStep.txt.rtf |N/A |Ran without bash, output copy pasted |
